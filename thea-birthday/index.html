@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1026">
+  <title>for thea ♥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=8">
+</head>
+<body>
+  <canvas id="snow" aria-hidden="true"></canvas>
+
+  <!-- 🔒 password screen -->
+  <section id="lock" class="screen active">
+    <form class="lock-card pixel-box" id="lockForm" autocomplete="off">
+      <canvas class="lock-heart" id="lockHeart" aria-hidden="true"></canvas>
+      <h1 class="lock-title">a little something<br>for you</h1>
+      <p class="lock-sub">psst... what's the secret word?</p>
+      <input id="pw" type="text" inputmode="text" autocomplete="off" autocapitalize="off" autocorrect="off"
+             spellcheck="false" enterkeyhint="go" placeholder="type it here ♡" aria-label="secret word" maxlength="40">
+      <button type="submit" class="pixel-btn">open ♥</button>
+      <p class="lock-msg" id="lockMsg" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <!-- 🎄 tree screen -->
+  <section id="tree" class="screen">
+    <canvas id="asciiGlow" aria-hidden="true"></canvas>
+    <canvas id="ascii" aria-label="a rotating christmas tree made of text, with snow falling"></canvas>
+    <div class="scene" id="scene"></div>
+    <p class="hint" id="hint">tap a present ✨</p>
+    <button class="sound-btn" id="soundBtn" type="button" aria-label="toggle sound">sound on</button>
+  </section>
+
+  <!-- 🎁 gift popup -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card pixel-box" id="modalCard">
+      <button class="modal-close" id="modalClose" type="button" aria-label="close">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="fx" id="fx" aria-hidden="true"></div>
+
+  <script src="js/content.js?v=8"></script>
+  <script src="js/pixelart.js?v=8"></script>
+  <script src="js/ascii-tree.js?v=8"></script>
+  <script src="js/main.js?v=8"></script>
+</body>
+</html>
